@@ -1,4 +1,4 @@
-# indie
+# home
 
 ## Project setup
 ```
