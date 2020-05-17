@@ -3,7 +3,7 @@
     <v-col cols="12">
       <v-row align=start justify=center>
         <v-card max-width="300" v-for="(person,index) in people" :key="index" class="ma-5" link outlined :to="'/people/'+person.code">
-          <v-img class="white--text align-end" height="200px" :src="person.photo">
+          <v-img class="white--text align-end" height="400px" :src="'./data/people/'+person.asset+'/profile.jpg'">
             <v-card-title>{{person.name}}</v-card-title>
           </v-img>
 
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import people from "../data/people/index";
+import people from "../data/people.js";
 export default {
   data(){
     return {
