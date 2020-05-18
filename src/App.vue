@@ -15,6 +15,8 @@
       <v-btn class="d-none d-lg-flex" text large rounded to="/research">Research</v-btn>
       <v-btn class="d-none d-lg-flex" text large rounded to="/publications">Publications</v-btn>
       <v-btn class="d-none d-lg-flex" text large rounded to="/people">People</v-btn>
+      <v-btn class="d-none d-lg-flex" text large rounded to="/a">News</v-btn>
+      <v-btn class="d-none d-lg-flex" text large rounded to="/b">Sponsors</v-btn>
 
       <v-menu transition="slide-y-transition" bottom >
         <template v-slot:activator="{ on }">
@@ -24,6 +26,8 @@
           <v-list-item to=/research><v-list-item-title>Research</v-list-item-title></v-list-item>
           <v-list-item to=/publications><v-list-item-title>Publications</v-list-item-title></v-list-item>
           <v-list-item to=/people><v-list-item-title>People</v-list-item-title></v-list-item>
+          <v-list-item to=/a><v-list-item-title>News</v-list-item-title></v-list-item>
+          <v-list-item to=/b><v-list-item-title>Sponsors</v-list-item-title></v-list-item>
         </v-list>
       </v-menu>
     </v-system-bar>

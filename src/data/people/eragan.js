@@ -1,9 +1,15 @@
 const data = {
+    type: "faculty",
     name: "Eric D Ragan",
-    code: "eragan",
+    id: "eragan",
     designation: "Faculty",
     interest: "Human-Computer Interaction (HCI), Human-Centered Computing (HCC), Visual Analytics, Virtual reality (VR), 3D Interaction, Information Visualization",
-    asset: "eragan"
+    description: [
+        "Hi", 
+        "I am Ragan"
+    ],
+    website: "http://www.eragan.com",
+    mail: "eragan@ufl.edu"
     
 };
 

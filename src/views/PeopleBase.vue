@@ -1,14 +1,16 @@
 <template>
 <div>
   <v-row>
-    <v-col cols=12 sm=4>
+    <v-col cols=12 sm=4 md=3>
       <v-card flat>
-        <v-img src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg" width=100%></v-img>
-        <v-card-title>Name</v-card-title>
-        <v-card-subtitle>Designation</v-card-subtitle>
+        <router-link :to="'/people/'+id">
+          <v-img  :src="'./data/people/'+person.id+'/profile.jpg'" width=100%></v-img>
+        </router-link>
+        <v-card-title>{{person.name}}</v-card-title>
+        <v-card-subtitle>{{person.designation}}</v-card-subtitle>
         <v-card-actions>
-          <v-btn small elevation=0>E-Mail</v-btn>
-          <v-btn small elevation=0 target="_blank" href="http://google.com">Website</v-btn>
+          <v-btn small elevation=0 >E-Mail</v-btn>
+          <v-btn small elevation=0 target="_blank" :href="person.website">Personal Website</v-btn>
         </v-card-actions>
       </v-card>
 
@@ -31,11 +33,16 @@
 </template>
 
 <script>
-  export default {
-    computed: {
-      id(){
-        return this.$route.params.id;
-      }
+import people from "../data/people.js";
+export default {
+  computed: {
+    id(){
+      return this.$route.params.id;
+    },
+    person() {
+      var i = this.$route.params.id;
+      return people.find(function(item){return item.id === i})
     }
-  }
+  },
+}
 </script>
