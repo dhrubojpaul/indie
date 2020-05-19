@@ -8,7 +8,7 @@ const data = {
         "Hi", 
         "I am Ragan"
     ],
-    website: "http://www.eragan.com",
+    website: "https://www.cise.ufl.edu/~eragan/",
     mail: "eragan@ufl.edu"
     
 };

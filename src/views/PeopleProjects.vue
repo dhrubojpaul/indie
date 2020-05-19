@@ -1,6 +1,6 @@
 <template>
 <div>
-project
+{{this.$refs}}
 </div>
 </template>
 

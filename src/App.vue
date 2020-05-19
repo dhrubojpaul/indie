@@ -32,7 +32,7 @@
       </v-menu>
     </v-system-bar>
 
-    <v-content style="margin:100px 10vw 10vh 10vw;" >
+    <v-content style="margin:0 10vw 10vh 10vw;">
       <v-container fluid>
         <transition name=slide-left mode=out-in>
           <router-view/>

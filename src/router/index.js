@@ -1,6 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Research from '../views/Research.vue'
+import ResearchItem from '../views/ResearchItem.vue'
+import Publications from '../views/Publications.vue'
+import People from '../views/People.vue'
+import PeopleBase from '../views/PeopleBase.vue'
+import PeopleHome from '../views/PeopleHome.vue'
+import PeoplePublications from '../views/PeoplePublications.vue'
+import PeopleProjects from '../views/PeopleProjects.vue'
+import PeopleCV from '../views/PeopleCV.vue'
 
 Vue.use(VueRouter)
 
@@ -11,32 +20,35 @@ Vue.use(VueRouter)
     component: Home
   },
   {
-    path: '/research', name: 'Research', component: () => import('../views/Research.vue')
+    path: '/research', name: 'Research', component: Research
   },
   {
-    path: '/publications', name: 'Publications', component: () => import('../views/Publications.vue')
+    path: '/research/:id/', name: 'ResearchItem', component: ResearchItem,
   },
   {
-    path: '/people', name: 'Publications', component: () => import('../views/People.vue')
+    path: '/publications', name: 'Publications', component: Publications
   },
   {
-    path: '/people/:id/', name: 'People', component: () => import('../views/PeopleBase.vue'),
+    path: '/people', name: 'People', component: People
+  },
+  {
+    path: '/people/:id/', name: 'PeopleBase', component: PeopleBase,
     children: [
       {
         path: '',
-        component: () => import('../views/PeopleHome.vue')
+        component: PeopleHome
       },
       {
         path: 'publications',
-        component: () => import('../views/PeoplePublications.vue')
+        component: PeoplePublications
       },
       {
         path: 'projects',
-        component: () => import('../views/PeopleProjects.vue')
+        component: PeopleProjects
       },
       {
         path: 'cv',
-        component: () => import('../views/PeopleCV.vue')
+        component: PeopleCV
       }
     ]
   },

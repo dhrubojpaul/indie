@@ -9,7 +9,7 @@ const data = {
         "I am Mahsan"
     ],
     website: "http://www.dhrubojpaul.com",
-    mail: "d.paul@ufl.edu"
+    mail: "mahsannourani@ufl.edu"
     
 };
 
