@@ -1,5 +1,21 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div>
+    <publications :data=publicationList></publications>
   </div>
 </template>
+
+<script>
+import Publications from "../components/Publications"
+import publicationList from "../data/publications"
+
+export default {
+  components: {
+    Publications
+  },
+  data(){
+    return{
+      publicationList
+    }
+  }
+}
+</script>
