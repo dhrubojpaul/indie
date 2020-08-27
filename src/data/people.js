@@ -7,6 +7,7 @@ import jblock from "./people/j.block";
 import dhoneycutt from "./people/dhoneycutt";
 import dpaul from "./people/d.paul";
 import brettbenda from "./people/brett.benda";
+import pfeijoogarcia from "./people/pfeijoogarcia"
 
 import derekmackey from "./people/derekmackey";
 import liamyoung from "./people/liamyoung"
@@ -31,6 +32,7 @@ const data = [
     dhoneycutt,
     dpaul,
     brettbenda,
+    pfeijoogarcia,
 
     derekmackey,
     liamyoung,
