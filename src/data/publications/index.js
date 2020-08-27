@@ -1,3 +1,4 @@
+/*
 var publications = [
     {
         id: "J1",
@@ -8,5 +9,21 @@ var publications = [
         },
     },
 ];
+
+*/
+
+var publications = [
+    {
+        bib: `@article{mohseni2018multidisciplinary,
+            title={A Multidisciplinary Survey and Framework for Design and Evaluation of Explainable AI Systems},
+            author={Mohseni, Sina and Zarei, Niloofar and Ragan, Eric D},
+            journal={arXiv},
+            pages={arXiv--1811},
+            year={2018}
+          }`
+    }
+]
+
+
 
 export default publications;

@@ -11,6 +11,7 @@
       <p class=text-justify v-for="(item,index) in project.description" :key=index>{{item}}</p>
     </v-card>
 
+    <!--
     <v-card flat>
       <p class="subtitle-1 font-weight-medium">Related Publications</p>
       <v-row justify="center">
@@ -19,6 +20,8 @@
         </v-col>
       </v-row>
     </v-card>
+    -->
+
   </v-col>
 </v-row>
  

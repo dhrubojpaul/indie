@@ -20,6 +20,7 @@ export default {
   },
   computed: {
     relatedPublications(){
+      /*
       var i = this.$route.params.id;
       var person = this.people.find(function(item){return item.id === i});
       var temp = publicationList.filter(function(publication){
@@ -31,6 +32,7 @@ export default {
         item.name = item.name.replace(person.pub_name, "<b>"+person.pub_name+"</b>")
       });
       return newList;
+      */
     },
   }
 }

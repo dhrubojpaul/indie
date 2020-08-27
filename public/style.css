@@ -13,7 +13,7 @@
 /*transition*/
 .slide-left-enter-active,
 .slide-left-leave-active {
-  transition-duration: .5s;
+  transition-duration: .2s;
   transition-property: height, opacity, transform;
   transition-timing-function: cubic-bezier(0, 0, 0.1, 1);
   overflow: hidden;

@@ -1,9 +1,9 @@
 const data = {
-    type: "faculty",
+    type: "director",
     name: "Eric D Ragan",
     id: "eragan",
     pub_name: "Ragan, E.",
-    designation: "Faculty",
+    designation: "Director",
     interest: "Human-Computer Interaction (HCI), Human-Centered Computing (HCC), Visual Analytics, Virtual reality (VR), 3D Interaction, Information Visualization",
     description: [
         "Hi", 
